@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import {RouterModule, Routes} from '@angular/router';
 import {FormsModule} from '@angular/forms';
+import { UploadProductImagesComponent } from './upload-product-images/upload-product-images.component';
 
 const appRoutes: Routes = [
   {
@@ -16,7 +17,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    EditProductComponent
+    EditProductComponent,
+    UploadProductImagesComponent
   ],
   imports: [
     BrowserModule,
