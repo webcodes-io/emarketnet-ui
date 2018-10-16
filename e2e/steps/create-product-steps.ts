@@ -1,23 +1,31 @@
 import { defineSupportCode } from 'cucumber';
 
-defineSupportCode(({Given, When, Then}) => {
+import { AddProductPage } from './add-product.po';
+
+defineSupportCode(({Given, When, Then, Before}) => {
+  let app: AddProductPage;
+
+  Before(() => {
+    app = new AddProductPage();
+  });
+
   Given(/^user navigate to the create product page$/, () => {
-    return 'pending';
+    return app.navigateTo();
   });
 
   When(/^user enters random-product-name in product-name field$/, () => {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
+    return app.fillTheForm('Rohrer & Klingner Scabiosa', 'scabiosa',
+      '50ml glass bottle of Rohrer & Klingner Scabiosa (Iron/Gall Nut-ink Scabiosa Purple) fountain pen ink. ' +
+      ' We recommend not leaving this ink in your pen longer than a week as it may stain.');
   });
 
   When(/^click create-product button$/, () => {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
+    return app.submit();
   });
 
   Then(/^user sees upload-pictures page$/, () => {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
+    return app.waitForTitleText('Image Upload');
+    // return app.waitForTitleText('Welcome to emarketnet-ui!');
   });
 
   Then(/^click skip button$/, () => {
