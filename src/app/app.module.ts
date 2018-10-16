@@ -11,7 +11,11 @@ const appRoutes: Routes = [
   {
     path: 'add-product',
     component: EditProductComponent
-  }
+  },
+  {
+    path: 'upload-product-mages',
+    component: UploadProductImagesComponent
+  },
 ];
 
 @NgModule({

@@ -1,18 +1,18 @@
 <div>
   <h2>edit-product</h2>
   <form #productForm="ngForm">
-    <div class="form-group">
+    <div class="form-group edit-product">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" [(ngModel)]="product.name" name="product-name" required>
+      <input type="text" class="form-control name" id="name" [(ngModel)]="product.name" name="product-name" required>
 
     </div>
     <div class="form-group">
       <label for="slug">Slug</label>
-      <input type="text" class="form-control" id="slug" [(ngModel)]="product.slug" name="slug">
+      <input type="text" class="form-control slug" id="slug" [(ngModel)]="product.slug" name="slug">
     </div>
     <div class="form-group">
       <label for="summary">Summary</label>
-      <textarea type="text" class="form-control" id="summary" [(ngModel)]="product.summary" name="summary"></textarea>
+      <textarea type="text" class="form-control summary" id="summary" [(ngModel)]="product.summary" name="summary"></textarea>
 
     </div>
 
