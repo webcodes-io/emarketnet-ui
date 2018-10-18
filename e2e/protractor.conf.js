@@ -15,7 +15,7 @@ exports.config = {
   frameworkPath: require.resolve('protractor-cucumber-framework'),
   cucumberOpts: {
     // require step definition files before executing features
-    require: ['./e2e/steps/**/*.ts'],
+    require: ['./steps/**/*.ts'],
     // <string[]> (expression) only execute the features or scenarios with tags matching the expression
     tags: [],
     // <boolean> fail if there are any undefined or pending steps
