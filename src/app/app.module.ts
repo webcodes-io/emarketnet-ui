@@ -3,8 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CreateProductComponent } from './components/create-product/create-product.component';
-import { RoutingModule } from './route-routing.module';
+import { RoutingModule } from './routing.module';
+import { Routes, RouterModule } from '@angular/router';
 import { ProductsService } from './services/products.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +14,8 @@ import { ProductsService } from './services/products.service';
   ],
   imports: [
     BrowserModule,
-    RoutingModule
+    RoutingModule,
+    RouterModule.forRoot([])
   ],
   providers: [
   	ProductsService
