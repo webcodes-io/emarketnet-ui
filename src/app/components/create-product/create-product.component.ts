@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+
+import { ProductsService } from '../../services/products.service';
 
 @Component({
   templateUrl: './create-product.component.html',
@@ -6,10 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateProductComponent implements OnInit {
 
-  constructor() { }
+  constructor(private productsService: ProductsService) { }
+
+  model = {
+	  productName: undefined,
+	  productDescription: undefined
+	  productPrice: null
+	};
 
   ngOnInit() {
-  	console.log('create product');
+
+  }
+
+  submitNewProduct() {
+  	this.productsService.createProduct(this.model).subscribe(value => console.log(value));
   }
 
 }
