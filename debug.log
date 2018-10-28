@@ -1,0 +1,8 @@
+[1020/015615.025:ERROR:process_info.cc(359)] UncheckedAllocate
+[1020/015615.027:ERROR:process_info.cc(359)] UncheckedAllocate
+[1020/015619.906:ERROR:process_info.cc(359)] UncheckedAllocate
+[1026/000633.908:ERROR:process_info.cc(359)] UncheckedAllocate
+[1026/000755.809:ERROR:process_info.cc(359)] UncheckedAllocate
+[1027/013833.027:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1027/013833.249:ERROR:exception_snapshot_win.cc(88)] thread ID 13116 not found in process
+[1027/014634.402:ERROR:process_info.cc(359)] UncheckedAllocate

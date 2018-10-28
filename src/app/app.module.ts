@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CreateProductComponent } from './components/create-product/create-product.component';
-import { RoutingModule } from './routing.module';
+import { AppRoutes } from './routing.module';
 import { Routes, RouterModule } from '@angular/router';
 import { ProductsService } from './services/products.service';
 
@@ -15,10 +15,9 @@ import { ProductsService } from './services/products.service';
   ],
   imports: [
     BrowserModule,
-    RoutingModule,
+    AppRoutes,
     FormsModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([])
+    ReactiveFormsModule
   ],
   providers: [
   	ProductsService

@@ -13,7 +13,7 @@ export class CreateProductComponent implements OnInit {
 
   model = {
 	  productName: undefined,
-	  productDescription: undefined
+	  productDescription: undefined,
 	  productPrice: null
 	};
 
