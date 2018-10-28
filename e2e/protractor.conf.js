@@ -2,7 +2,7 @@
 exports.config = {
   allScriptsTimeout: 11000,
   specs: [
-    './scenarios/features/*.feature'
+    './features/*.feature'
   ],
   capabilities: {
     'browserName': 'chrome'
@@ -12,7 +12,7 @@ exports.config = {
   framework: 'custom',
   frameworkPath: require.resolve('protractor-cucumber-framework'),
   cucumberOpts: {
-    require: ['./src/**/*.ts'],
+    require: ['./steps/*.ts'],
     tags: [],
     strict: true,
     format: [

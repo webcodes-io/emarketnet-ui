@@ -1,4 +1,4 @@
-import { AppPage } from './app.po';
+import { AppPage } from './create-product.po';
 import { defineSupportCode } from 'cucumber';
 import { expect } from 'chai';
 
@@ -17,7 +17,7 @@ defineSupportCode(({Given, When, Then, Before}) => {
 
   Then('/^user can see page title$/', {timeout: 1 * 1000},
     function() {
-      return expect(page.getElementText('#create-product-title')).toEqual('Create product:');
+      return expect(page.getElementText('#create-product-title')).equal('Create product:');
   });
 
 });
