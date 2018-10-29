@@ -1,15 +1,15 @@
 [
   {
     "keyword": "Feature",
-    "name": "Create product",
+    "name": "Create new product",
     "line": 1,
-    "id": "create-product",
+    "id": "create-new-product",
     "tags": [],
     "uri": "e2e\\features\\create-product.feature",
     "elements": [
       {
         "description": "    \tWhen: user navigates to create-product page\n      Then: user can see page title",
-        "id": "create-product;create-a-product",
+        "id": "create-new-product;create-a-product",
         "keyword": "Scenario",
         "line": 2,
         "name": "Create a product",
@@ -20,10 +20,11 @@
             "keyword": "Before",
             "hidden": true,
             "match": {
-              "location": "e2e\\steps\\create-product-steps.ts:9"
+              "location": "e2e\\steps\\create-product-steps.ts:8"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 15000000
             }
           },
           {
