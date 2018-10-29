@@ -23,8 +23,7 @@
               "location": "e2e\\steps\\create-product-steps.ts:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 15000000
+              "status": "passed"
             }
           },
           {

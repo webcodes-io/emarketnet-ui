@@ -1,4 +1,4 @@
-import { browser, by, element } from 'protractor';
+import {$, browser, by, element, protractor} from 'protractor';
 
 export class AppPage {
   navigateTo(route) {
@@ -6,6 +6,6 @@ export class AppPage {
   }
 
   getElementText(elementHook) {
-    return element(by.css(elementHook)).getText();
+    return element(by.css(elementHook));
   }
 }
