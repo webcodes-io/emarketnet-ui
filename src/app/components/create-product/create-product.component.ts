@@ -9,6 +9,7 @@ import { ProductsService } from '../../services/products.service';
 })
 export class CreateProductComponent implements OnInit {
 
+  productDetails: string[] = [];
   constructor(private productsService: ProductsService) { }
 
   model = {
@@ -22,7 +23,7 @@ export class CreateProductComponent implements OnInit {
   }
 
   submitNewProduct() {
-  	this.productsService.createProduct(this.model).subscribe(value => console.log(value));
+  	this.productsService.createProduct(this.model).subscribe(value => this.productDetails.push(value));
   }
 
 }

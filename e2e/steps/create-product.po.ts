@@ -5,7 +5,11 @@ export class AppPage {
     return browser.get(route);
   }
 
-  getElementText(elementHook) {
+  getElementById(elementHook) {
     return element(by.id(elementHook));
+  }
+
+  submitCreateForm() {
+    return element(by.id('submitBtn')).click();
   }
 }

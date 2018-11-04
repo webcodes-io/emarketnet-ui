@@ -1,11 +1,12 @@
+<h1 id="create-product-title">Create product:</h1>
 <div class="container">
-    <h1 id="create-product-title">Create product:</h1>
+  <div class="row">
     <form>
       <div class="form-group">
         <label for="productName">Product name</label>
         <input type="text" required [(ngModel)]="model.productName" class="form-control" id="productName" name="productName" required>
       </div>
- 
+
       <div class="form-group">
         <label for="productDescription">Product description</label>
         <input type="text" class="form-control" required [(ngModel)]="model.productDescription" id="productDescription" name="productDescription">
@@ -15,8 +16,16 @@
         <label for="productPrice">Product price</label>
         <input type="number" class="form-control" required [(ngModel)]="model.productPrice" id="productPrice" name="productPrice">
       </div>
- 
-      <button type="submit" (click)="submitNewProduct()" class="btn btn-success">Submit</button>
- 
+
+      <button type="submit" (click)="submitNewProduct()" id="submitBtn" class="btn btn-success">Submit</button>
     </form>
+  </div>
+  <div class="row" *ngIf="productDetails.length > 0">
+    <div>New product details:</div>
+    <div *ngFor="let detail of productDetails">
+      <div id="createdProductName">Product name: {{detail.productName}}</div>
+      <div id="createdProductDescription">Product description: {{detail.productDescription}}</div>
+      <div id="createdProductPrice">Product price: {{detail.productPrice}}</div>
+    </div>
+  </div>
 </div>
