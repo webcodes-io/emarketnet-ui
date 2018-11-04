@@ -9,6 +9,10 @@ defineSupportCode(({Given, When, Then, Before}) => {
     	page = new AppPage();
   	});
 
+  Given(/^Open browser$/, function() {
+    console.log('started test');
+  });
+
   When(/^user navigates to create-product page$/,
     function() {
       return page.navigateTo('/create-product');

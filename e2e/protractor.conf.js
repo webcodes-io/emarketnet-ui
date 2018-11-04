@@ -19,7 +19,8 @@ exports.config = {
     ],
     dryRun: false,
     compiler: []
-  },
+  }
+  ,
   onPrepare: function() {
     require('ts-node').register({
       project: require('path').join(__dirname, './tsconfig.e2e.json')
