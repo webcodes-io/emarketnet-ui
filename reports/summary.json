@@ -1,0 +1,179 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Create new product",
+    "line": 1,
+    "id": "create-new-product",
+    "tags": [],
+    "uri": "e2e\\features\\create-product.feature",
+    "elements": [
+      {
+        "id": "create-new-product;navigate-to-create-product-page",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Navigate to create-product page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e\\steps\\create-product-steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 3,
+            "name": "user navigates to create-product page",
+            "match": {
+              "location": "e2e\\steps\\create-product-steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2706000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "user can see page title",
+            "match": {
+              "location": "e2e\\steps\\create-product-steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-new-product;create-a-product",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Create a product",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e\\steps\\create-product-steps.ts:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user navigates to create-product page",
+            "match": {
+              "location": "e2e\\steps\\create-product-steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1182000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user enters product name T-Rex",
+            "match": {
+              "location": "e2e\\steps\\create-product-steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 238000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user enters product description an intuitive toy",
+            "match": {
+              "location": "e2e\\steps\\create-product-steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 324000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user enters product price 10.00",
+            "match": {
+              "location": "e2e\\steps\\create-product-steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 190000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user enters submits button",
+            "match": {
+              "location": "e2e\\steps\\create-product-steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user sees created product details on the page",
+            "match": {
+              "location": "e2e\\steps\\create-product-steps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
