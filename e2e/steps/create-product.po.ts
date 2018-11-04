@@ -6,6 +6,6 @@ export class AppPage {
   }
 
   getElementText(elementHook) {
-    return element(by.css(elementHook));
+    return element(by.id(elementHook));
   }
 }
